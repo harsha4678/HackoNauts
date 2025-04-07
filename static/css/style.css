@@ -1,0 +1,192 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Container Box */
+.container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px 0;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Header */
+h2 {
+    color: #ff6f61;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    text-align: left;
+}
+
+label {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Buttons */
+.btn {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e05245;
+    transform: translateY(-2px);
+}
+
+/* Links */
+a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Advice Box */
+.advice-box {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #fef4f4;
+    border: 1px solid #ff6f61;
+    border-radius: 8px;
+    color: #ff6f61;
+    text-align: left;
+}
+
+/* List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fff5f3;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ffebe6;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Dashboard Buttons */
+.dashboard-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.dashboard-buttons a {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.dashboard-buttons a:hover {
+    background-color: #e05245;
+    transform: translateY(-2px);
+}
+
+/* Logout Button Special */
+.logout {
+    background-color: #444;
+}
+
+.logout:hover {
+    background-color: #222;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Top Logo Image */
+.top-image {
+    max-width: 100px;
+    margin: 0 auto 15px;
+}
+
+/* Specific styles for different sections */
+.record-list li, .appointment-list li {
+    background-color: #f0f8ff;
+    border: 1px solid #b3e5fc;
+    color: #007acc;
+}
+
+.diet-list li {
+    background-color: #fef5e6;
+    border: 1px solid #ffcc80;
+    color: #e67e22;
+}
+
+/* Date and Time Picker */
+input[type="date"], input[type="time"] {
+    cursor: pointer;
+}
+
+/* Flash Message */
+.flash-messages {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+/* Symptom Textarea */
+textarea {
+    resize: none;
+    height: 80px;
+}
